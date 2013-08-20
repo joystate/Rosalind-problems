@@ -1,6 +1,6 @@
 file = '/Users/nadia/Downloads/rosalind_gc.txt'
 
-def sec_and_tert_structures(file):
+def ident_unknown_dna(file):
     f = open(file).read().replace('\n', '')
     
     import re
@@ -18,5 +18,4 @@ def sec_and_tert_structures(file):
     print max(fasta_to_cont.iteritems(), key=operator.itemgetter(1))[1]
         
         
-
-sec_and_tert_structures(file)
+ident_unknown_dna(file)
