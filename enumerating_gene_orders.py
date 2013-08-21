@@ -9,10 +9,6 @@ def permuts(file):
     print len(perms)
     for i in perms:
         print str(i)[1:-1].replace(',', ' ')
-        
-    
-#     print len(list(itertools.permutations(range(int(f)))))
-#     for i in itertools.permutations(range(int(f))):
-#         print str(i)[1:-1].replace(',', ' ')
+
     
 permuts(file)
