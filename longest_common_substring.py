@@ -8,7 +8,7 @@ def ancestor(file):
     raw_lines = re.findall('>Rosalind_[0-9]*[A|C|G|T]*', f)
     chains = []
     for line in raw_lines:
-        line = re.sub('>Rosalind_[0-9]*', '', line)
+        line = re.sub('>Rosalind_\d+', '', line)
         chains.append(list(line))
         
     x = numpy.array(chains)
