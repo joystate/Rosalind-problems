@@ -9,5 +9,6 @@ def sec_and_tert_structures(file):
     trantab = maketrans(intab, outtab)
     
     print f.translate(trantab)[::-1]
+    
 
 sec_and_tert_structures(file)
